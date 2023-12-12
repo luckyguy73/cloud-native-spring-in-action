@@ -1,12 +1,7 @@
 package com.polarbookshop.catalogservice.web;
 
-import javax.validation.Valid;
-
-import com.polarbookshop.catalogservice.domain.Book;
-import com.polarbookshop.catalogservice.domain.BookService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +12,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.polarbookshop.catalogservice.domain.Book;
+import com.polarbookshop.catalogservice.domain.BookService;
+
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("books")
